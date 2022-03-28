@@ -29,7 +29,7 @@ The Realme 6 Pro (codenamed _"RMX2061"_) is a mid-range smartphone from OPPO's s
 
 ```bash
 # Device Tree
-git clone https://github.com/Realme-6-pro/device_realme_RXM2061.git device/realme/RMX2061
+git clone https://github.com/Realme-6-pro/device_realme_RMX2061.git device/realme/RMX2061
 
 # Device common tree
 git clone https://github.com/Realme-6-pro/device_realme_sm7125-common.git device/realme/sm7125-common

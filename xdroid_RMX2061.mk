@@ -8,11 +8,14 @@
 $(call inherit-product, device/realme/RMX2061/device.mk)
 
 # Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
+XDROID_BOOT := 1080
 WITH_GMS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Inherit some common stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common_full_phone.mk)
 
 # Device identifier
 PRODUCT_NAME := aosp_RMX2061

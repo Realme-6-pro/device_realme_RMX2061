@@ -7,15 +7,22 @@
 # Inherit from RMX2061 device
 $(call inherit-product, device/realme/RMX2061/device.mk)
 
+# Inherit framework first
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+
 # Bootanimation Resolution
 XDROID_BOOT := 1080
 WITH_GMS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := false
 
 # Inherit some common stuff
-$(call inherit-product, vendor/xdroid/config/common_full_phone.mk)
+$(call inherit-product, vendor/xdroid/config/common.mk)
 
 # Device identifier
 PRODUCT_NAME := aosp_RMX2061

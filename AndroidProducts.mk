@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_RMX2061.mk
+    $(LOCAL_DIR)/awaken_RMX2061.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_RMX2061-user \
-    xdroid_RMX2061-userdebug \
-    xdroid_RMX2061-eng
+    awaken_RMX2061-user \
+    awaken_RMX2061-userdebug \
+    awaken_RMX2061-eng

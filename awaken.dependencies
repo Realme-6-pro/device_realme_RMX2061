@@ -1,0 +1,27 @@
+
+[
+  {
+    "remote": "github",
+    "repository": "Realme-6-pro/vendor_realme",
+    "target_path": "vendor/realme",
+    "branch": "12"
+  },
+  {
+    "remote": "github",
+    "repository": "Realme-6-pro/kernel_realme_atoll_oss",
+    "target_path": "kernel_realme_atoll",
+    "branch": "oss"
+  },
+  {
+    "remote": "github",
+    "repository": "Realme-6-pro/device_realme_sm7125-common",
+    "target_path": "device/realme/sm7125-common",
+    "branch": "12"
+  },
+  {
+    "remote": "github",
+    "repository": "Realme-6-pro/hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "12"
+  }
+]

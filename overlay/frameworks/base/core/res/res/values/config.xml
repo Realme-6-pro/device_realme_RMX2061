@@ -56,4 +56,7 @@
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
+    <!-- The default refresh rate -->
+    <integer name="config_defaultRefreshRate">60</integer>
+
 </resources>

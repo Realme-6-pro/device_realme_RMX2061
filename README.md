@@ -28,8 +28,15 @@ The Realme 6 Pro (codenamed _"RMX2061"_) is a mid-range smartphone from OPPO's s
 ### Repos it needs for building
 
 ```bash
+# source
+mkdir awaken
+cd awaken
+repo init -u https://github.com/Project-Awaken/android_manifest -b 12.1
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+
+
 # Device Tree
-git clone https://github.com/Realme-6-pro/device_realme_RMX2061.git device/realme/RMX2061 -b 12
+git clone https://github.com/Realme-6-pro/device_realme_RMX2061.git device/realme/RMX2061 -b awaken
 
 # Device common tree
 git clone https://github.com/Realme-6-pro/device_realme_sm7125-common.git device/realme/sm7125-common
@@ -43,5 +50,5 @@ git clone --depth=1 https://github.com/Realme-6-pro/kernel_realme_atoll_oss.git 
 # Hardware tree
 git clone https://github.com/Realme-6-pro/hardware_xiaomi.git hardware/xiaomi
 
-source build/env*.sh && lunch aosp_RMX2061-userdebug && mka bacon
+source build/env*.sh && lunch awaken_RMX2061-userdebug && make bacon -j$(nproc --all)
 ```

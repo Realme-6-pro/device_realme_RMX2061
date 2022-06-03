@@ -12,10 +12,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
 
 # Inherit some common stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_RMX2061
+PRODUCT_NAME := dot_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme 6 Pro

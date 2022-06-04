@@ -10,13 +10,6 @@ $(call inherit-product, device/realme/RMX2061/device.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Google Assistant
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -42,6 +35,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX2061" \
     TARGET_DEVICE="RMX2061"
 
-# RIce
+# Rice
 RICE_MAINTAINER := Neel0210
-TARGET_HAS_UDFPS := true
+
+# GAPPS
+WITH_GAPPS := true
+
+# Quick tap feature
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true

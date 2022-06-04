@@ -38,7 +38,7 @@ git clone https://github.com/Realme-6-pro/device_realme_sm7125-common.git device
 git clone https://github.com/Realme-6-pro/vendor_realme.git vendor/realme
 
 # kernel tree
-git clone --depth=1 https://github.com/KakarotKernel/android_kernel_realme_sm7125.git kernel/realme/atoll
+git clone --depth=1 https://github.com/Realme-6-pro/kernel_realme_atoll_oss.git kernel/realme/atoll
 
 # Hardware tree
 git clone https://github.com/Realme-6-pro/hardware_xiaomi.git hardware/xiaomi

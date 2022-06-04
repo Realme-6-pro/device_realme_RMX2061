@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX2061.mk
+    $(LOCAL_DIR)/cherish_RMX2061.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_RMX2061-user \
-    aosp_RMX2061-userdebug \
-    aosp_RMX2061-eng
+    cherish_RMX2061-user \
+    cherish_RMX2061-userdebug \
+    cherish_RMX2061-eng

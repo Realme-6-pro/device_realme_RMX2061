@@ -10,6 +10,12 @@ $(call inherit-product, device/realme/RMX2061/device.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 WITH_GMS := true
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+
+# Google Assistant
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
 
 # Inherit some common stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)

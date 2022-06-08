@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX2061.mk
+    $(LOCAL_DIR)/evolution_RMX2061.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_RMX2061-user \
-    aosp_RMX2061-userdebug \
-    aosp_RMX2061-eng
+    evolution_RMX2061-user \
+    evolution_RMX2061-userdebug \
+    evolution_RMX2061-eng
